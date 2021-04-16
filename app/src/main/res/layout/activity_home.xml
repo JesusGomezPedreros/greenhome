@@ -71,20 +71,15 @@
                 android:layout_height="8dp" />
 
             <Button
-                android:id="@+id/solicitarButton4"
+                android:id="@+id/seeProviderButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solicitar Recogida" />
+                android:layout_height="40dp"
+                android:text="Ver Proveedor" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="8dp" />
 
-            <Button
-                android:id="@+id/solicitarButton5"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Solicitar Recogida" />
         </LinearLayout>
 
         <LinearLayout
