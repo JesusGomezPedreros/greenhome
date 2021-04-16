@@ -64,7 +64,7 @@
                 android:id="@+id/scheduledButton"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="Agendados" />
+                android:text="Solicitudes Agendadas" />
 
             <Space
                 android:layout_width="match_parent"
