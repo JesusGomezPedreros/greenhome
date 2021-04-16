@@ -35,64 +35,17 @@
             android:layout_height="40dp"
             android:text="Proveedor" />
 
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="8dp" />
+            android:layout_height="100"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/addressEditText"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Direccion" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <EditText
-            android:id="@+id/materialEditText"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Material" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <EditText
-            android:id="@+id/numberPhoneEditText"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Telefono" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <EditText
-            android:id="@+id/numberPersonEditText"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Cedula o DNI" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <EditText
-            android:id="@+id/dateTextDate"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="date" />
+            <Button
+                android:id="@+id/solicitarButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solicitar Recogida" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -107,5 +60,6 @@
                 android:text="Cerrar Sesion" />
 
         </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
