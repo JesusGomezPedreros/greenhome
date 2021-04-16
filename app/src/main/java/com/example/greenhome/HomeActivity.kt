@@ -8,6 +8,7 @@ import com.google.firebase.auth.FirebaseAuth
 enum class ProviderType(){
     BASIC
 }
+// Jesus es gay
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
