@@ -37,13 +37,53 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/solicitarButton"
                 android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Solicitar Recogida" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <Button
+                android:id="@+id/dateButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Datos" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <Button
+                android:id="@+id/scheduledButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Agendados" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <Button
+                android:id="@+id/solicitarButton4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Solicitar Recogida" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <Button
+                android:id="@+id/solicitarButton5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
                 android:text="Solicitar Recogida" />
         </LinearLayout>
 
