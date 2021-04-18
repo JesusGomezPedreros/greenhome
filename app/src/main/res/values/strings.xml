@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">greenhome</string>
+    <string name="prefs_file">com.example.greenhom.PREFERENCE_FILE_KEY</string>
 </resources>

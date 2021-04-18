@@ -1,5 +1,6 @@
 package com.example.greenhome
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.greenhome.databinding.ActivityHomeBinding
@@ -22,6 +23,12 @@ class HomeActivity : AppCompatActivity() {
         val email = bundle?.getString("email")
         val provider = bundle?.getString( "Provider")
         setup(email ?:"", provider ?:"")
+
+        //Guardado de sesion
+        val prefs=getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
+        prefs.putString("email", email)
+        //prefs.putString("provider", provider)
+        prefs.apply()
     }
 
     private fun setup(email: String, provider: String){
@@ -30,6 +37,11 @@ class HomeActivity : AppCompatActivity() {
         binding.providertextView.text=provider
 
         binding.logOutButton.setOnClickListener{
+            //borrar los datos de sesion
+            val prefs=getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
+            prefs.clear()
+            prefs.apply()
+            //finaliza sesion de firebase
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
         }

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F4F4F4"
     tools:context=".AuthActivity">
 
     <LinearLayout
+        android:id="@+id/authLayout"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_marginStart="16dp"
@@ -24,10 +25,10 @@
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
             android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:autofillHints="" />
+            android:inputType="textEmailAddress" />
 
         <Space
             android:layout_width="match_parent"
@@ -51,7 +52,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Registrar" />
+                android:background="#0E2FE3"
+                android:backgroundTint="#FFFFFF"
+                android:text="Registrar"
+                android:textColor="#FFFEFE" />
 
             <Space
                 android:layout_width="8dp"
@@ -63,6 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#3F51B5"
                 android:text="Acceder" />
 
         </LinearLayout>
