@@ -14,6 +14,6 @@ private lateinit var binding: ActivitySolicitedBinding
         binding = ActivitySolicitedBinding.inflate(layoutInflater)
         val view =binding.root
         setContentView(view)
-
     }
+
 }
